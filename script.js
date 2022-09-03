@@ -6,10 +6,12 @@ const btnCalculat = document.getElementById('calcular')
 const presultado = document.getElementById('resultado')
 const btnHistorial = document.getElementById('btnHistorial')
 const pHistorial = document.getElementById('pHistorial')
+const btnClear = document.getElementById('btnClear')
 
 // Events
 btnCalculat.addEventListener('click', calcular)
 btnHistorial.addEventListener('click', MostrarHistorial)
+btnClear.addEventListener('click', clearHistory)
 
 // variables
 let historial = [] // historial de resultados
@@ -60,4 +62,8 @@ function MostrarHistorial() {
     // historial.forEach(resultado => { //recorre al array mostrando cada elemento (NO ME FUNCIONA)
     //     pHistorial.innerHTML = "Historial: " + resultado
     // });
+}
+
+function clearHistory() {
+    pHistorial.innerHTML = historial = []
 }
