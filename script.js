@@ -58,10 +58,6 @@ function calcular() {
 
 function MostrarHistorial() {
     pHistorial.innerHTML = `Historial: ${historial}`
-
-    // historial.forEach(resultado => { //recorre al array mostrando cada elemento (NO ME FUNCIONA)
-    //     pHistorial.innerHTML = "Historial: " + resultado
-    // });
 }
 
 function clearHistory() {
